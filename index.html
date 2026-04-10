@@ -1,0 +1,2579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Memória e Informação — Uma jornada para o conhecimento | Josie Kromer</title>
+<meta name="description" content="Descubra o método que revela por que sua vida se repete e como ler o mapa invisível que organiza cada ciclo. Formação conduzida pela psicoterapeuta internacional Josie Kromer." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --primary: #58B7B0;
+    --primary-dark: #3F9A93;
+    --primary-light: #E8F5F4;
+    --white: #FFFFFF;
+    --offwhite: #EEF5F4;
+    --cream: #DFECEA;
+    --dark-teal: #1e413e;
+    --border: #E5E5E5;
+    --text-dark: #1A1A1A;
+    --text-body: #4A4A4A;
+    --text-muted: #8B8B8B;
+    --whatsapp: #25D366;
+    --sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    --title: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --container: 1200px;
+    --radius: 6px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-body);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+    color: var(--text-dark);
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 36px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: 0 6px 20px rgba(88, 183, 176, 0.25);
+  }
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(88, 183, 176, 0.35);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+  }
+  .btn-outline:hover { background: var(--primary); color: var(--white); }
+  .btn-white {
+    background: var(--white);
+    color: var(--primary);
+  }
+  .btn-white:hover { background: var(--cream); transform: translateY(-2px); }
+  .btn-whatsapp {
+    background: var(--whatsapp);
+    color: var(--white);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+  }
+  .btn-whatsapp:hover {
+    background: #1FBA58;
+    transform: translateY(-2px);
+  }
+  .btn-lg { padding: 22px 44px; font-size: 15px; }
+
+  /* Phosphor arrow icon sizing inside buttons (MIT licensed icons) */
+  .btn svg.ph-arrow,
+  .btn-hero svg.ph-arrow {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    transition: transform 0.35s ease;
+  }
+  .btn:hover svg.ph-arrow,
+  .btn-hero:hover svg.ph-arrow {
+    transform: translateX(4px);
+  }
+  .btn-lg svg.ph-arrow { width: 20px; height: 20px; }
+
+  .link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--primary);
+    padding-bottom: 4px;
+    transition: gap 0.3s;
+  }
+  .link-arrow:hover { gap: 14px; }
+  .link-arrow svg.ph-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+
+  /* ---------- HERO VSL ---------- */
+  .hero {
+    position: relative;
+    padding: 80px 0 72px;
+    background:
+      linear-gradient(180deg, rgba(13,43,42,0.72) 0%, rgba(21,55,54,0.68) 35%, rgba(26,65,64,0.74) 65%, rgba(15,46,45,0.85) 100%),
+      url('midia/background%20hero.webp') center/cover no-repeat;
+    overflow: hidden;
+    text-align: center;
+    color: var(--white);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2358B7B0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(88,183,176,0.08), transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 28px;
+    padding: 8px 20px;
+    border: 1px solid rgba(88,183,176,0.3);
+    border-radius: 40px;
+    background: rgba(88,183,176,0.08);
+    backdrop-filter: blur(4px);
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 40px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 strong {
+    font-weight: 600;
+    color: var(--white);
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .hero-sub {
+    font-family: var(--title);
+    font-size: clamp(18px, 2.2vw, 24px);
+    font-style: italic;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px;
+    margin: 0 auto 56px;
+    font-weight: 400;
+  }
+
+  /* --- VSL Video Block (YouTube Facade — lazy load) --- */
+  .vsl-wrap {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto 48px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+      0 24px 64px rgba(0,0,0,0.35),
+      0 0 0 1px rgba(88,183,176,0.15),
+      inset 0 1px 0 rgba(255,255,255,0.06);
+    aspect-ratio: 16 / 9;
+    background: #0d2b2a;
+    cursor: pointer;
+  }
+  .vsl-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(88,183,176,0.2);
+    pointer-events: none;
+    z-index: 4;
+  }
+  .vsl-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%);
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .vsl-wrap.is-playing::after,
+  .vsl-wrap.is-playing::before { opacity: 0; }
+  .vsl-cover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.6s ease, filter 0.4s ease;
+  }
+  .vsl-wrap:hover .vsl-cover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+  }
+  .vsl-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 84px;
+    height: 84px;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 3;
+    box-shadow: 0 0 0 0 rgba(88,183,176,0.5);
+    animation: pulse 2.4s infinite;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    backdrop-filter: blur(8px);
+    padding: 0;
+  }
+  .vsl-wrap:hover .vsl-play {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: rgba(88,183,176,0.35);
+    border-color: var(--primary);
+  }
+  .vsl-play svg { width: 32px; height: 32px; margin-left: 4px; }
+  .vsl-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    z-index: 5;
+  }
+  .vsl-wrap.is-playing { cursor: default; }
+  .vsl-wrap.is-playing .vsl-cover,
+  .vsl-wrap.is-playing .vsl-play { display: none; }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(88,183,176,0.5); }
+    70% { box-shadow: 0 0 0 24px rgba(88,183,176,0); }
+    100% { box-shadow: 0 0 0 0 rgba(88,183,176,0); }
+  }
+
+  /* --- CTA Area --- */
+  .hero-cta-area {
+    margin-bottom: 24px;
+  }
+  .hero .btn-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 22px 56px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #0d2b2a;
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  .hero .btn-hero:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(88,183,176,0.35);
+  }
+
+  .hero-micro {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.65;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .hero-micro strong {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+  }
+
+  /* --- Decorative Elements --- */
+  .hero-deco {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero-deco--1 {
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    left: -100px;
+    border: 1px solid rgba(88,183,176,0.12);
+  }
+  .hero-deco--2 {
+    width: 200px;
+    height: 200px;
+    bottom: -60px;
+    right: -50px;
+    border: 1px solid rgba(88,183,176,0.08);
+  }
+  .hero-deco--3 {
+    width: 12px;
+    height: 12px;
+    top: 18%;
+    right: 12%;
+    background: var(--primary);
+    opacity: 0.25;
+  }
+  .hero-deco--4 {
+    width: 8px;
+    height: 8px;
+    bottom: 22%;
+    left: 10%;
+    background: var(--primary);
+    opacity: 0.2;
+  }
+
+  @media (max-width: 900px) {
+    .hero { padding: 56px 0 56px; }
+    .hero h1 { font-size: clamp(28px, 7vw, 40px); }
+    .hero-sub { font-size: 17px; margin-bottom: 40px; }
+    .vsl-wrap { margin-bottom: 40px; }
+    .vsl-play { width: 64px; height: 64px; }
+    .vsl-play svg { width: 24px; height: 24px; }
+    .hero .btn-hero { padding: 18px 36px; font-size: 12px; }
+    .hero-micro { font-size: 13px; padding: 0 16px; }
+  }
+  @media (max-width: 480px) {
+    .vsl-play { width: 56px; height: 56px; }
+    .vsl-play svg { width: 20px; height: 20px; }
+  }
+
+  /* ---------- SECTION: PADRÕES INVISÍVEIS ---------- */
+  .section {
+    padding: 120px 0;
+    position: relative;
+  }
+  .section-alt {
+    background: var(--offwhite);
+    box-shadow: inset 0 1px 0 rgba(88,183,176,0.12);
+  }
+  .section-cream {
+    background: var(--cream);
+    box-shadow: inset 0 1px 0 rgba(88,183,176,0.14);
+  }
+
+  .padroes {
+    display: grid;
+    grid-template-columns: 0.85fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .padroes-img {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #1a4140;
+  }
+  .padroes-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .vertical-label {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .padroes-content .callout {
+    font-family: var(--title);
+    font-size: clamp(32px, 3.8vw, 52px);
+    line-height: 1.1;
+    margin-bottom: 32px;
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+  .padroes-content .callout em {
+    font-style: italic;
+    color: var(--primary);
+  }
+  .padroes-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    max-width: 560px;
+  }
+  .padroes-content .link-arrow { margin-top: 16px; }
+
+  @media (max-width: 900px) {
+    .section { padding: 72px 0; }
+    .padroes { grid-template-columns: 1fr; gap: 48px; }
+    .vertical-label { position: static; transform: none; margin-bottom: 12px; display: inline-block; }
+  }
+
+  /* ---------- SECTION: MÉTODO M.I. ---------- */
+  .metodo-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .metodo-header h2 {
+    font-size: clamp(32px, 4vw, 54px);
+    max-width: 760px;
+    margin: 0 auto 20px;
+  }
+  .metodo-header p {
+    font-size: 17px;
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto;
+    font-style: italic;
+    font-family: var(--title);
+  }
+
+  .mandala {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 220px;
+    align-items: center;
+  }
+  .mandala-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    filter: drop-shadow(0 20px 60px rgba(88,183,176,0.25));
+  }
+  .mandala-center img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
+    animation: mandalaFloat 8s ease-in-out infinite;
+  }
+  @keyframes mandalaFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(0.5deg); }
+  }
+
+  .pilar {
+    background: var(--white);
+    padding: 36px 32px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    position: relative;
+    z-index: 3;
+    transition: all 0.3s;
+  }
+  .pilar:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .pilar-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  .pilar-icon svg { width: 38px; height: 38px; }
+  .pilar h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .pilar p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  @media (max-width: 900px) {
+    .mandala { grid-template-columns: 1fr; gap: 24px; }
+    .mandala-center { position: relative; left: auto; top: auto; transform: none; margin: 0 auto 40px; }
+    .mandala-center::before, .mandala-center::after { display: none; }
+  }
+
+  /* ---------- SECTION: CONHEÇA O MÉTODO ---------- */
+  .conheca {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .conheca-img {
+    aspect-ratio: 4 / 5;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background: #1a4140;
+    box-shadow: var(--shadow-md);
+  }
+  .conheca-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .conheca-content h2 {
+    font-size: clamp(36px, 4.4vw, 58px);
+    margin-bottom: 32px;
+  }
+  .conheca-content h2 em {
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .conheca-content p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+  .conheca-content .quote {
+    font-family: var(--title);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--text-dark);
+    border-left: 2px solid var(--primary);
+    padding-left: 20px;
+    margin: 28px 0;
+  }
+
+  @media (max-width: 900px) {
+    .conheca { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  /* ---------- SECTION: PARA QUEM É ---------- */
+  .paraquem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .paraquem-content h2 {
+    font-size: clamp(40px, 4.8vw, 62px);
+    margin-bottom: 28px;
+  }
+  .paraquem-content > p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    max-width: 520px;
+  }
+  .paraquem-list {
+    list-style: none;
+  }
+  .paraquem-list li {
+    padding: 18px 0 18px 28px;
+    border-top: 1px solid var(--border);
+    position: relative;
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.65;
+  }
+  .paraquem-list li:last-child { border-bottom: 1px solid var(--border); }
+  .paraquem-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 28px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+  }
+  .paraquem-list strong { color: var(--text-dark); font-weight: 600; }
+
+  .paraquem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .paraquem-grid .img {
+    aspect-ratio: 3/4;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background: #1a4140;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .paraquem-grid .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+  .paraquem-grid .img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .paraquem-grid .img:hover img { transform: scale(1.04); }
+  .paraquem-grid .img:nth-child(2) { margin-top: 32px; }
+  .paraquem-grid .img:nth-child(4) { margin-top: 32px; }
+  .paraquem-grid .img::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.95);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    z-index: 2;
+  }
+  .paraquem-grid .img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(13,43,42,0.75) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  @media (max-width: 900px) {
+    .paraquem { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  /* ---------- SECTION: O QUE É O CURSO ---------- */
+  .oquee {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: center;
+    position: relative;
+  }
+  .oquee-header {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .oquee-header h2 {
+    font-size: clamp(44px, 5.4vw, 72px);
+  }
+
+  /* --- Showcase de números (substitui a foto) --- */
+  .oquee-stats {
+    position: relative;
+    padding: 4px 0 0;
+  }
+  .oquee-stats-eyebrow {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 32px;
+  }
+  .oquee-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    padding: 22px 4px;
+    border-top: 1px solid rgba(88,183,176,0.28);
+    transition: background 0.3s ease, padding-left 0.3s ease;
+  }
+  .oquee-stat:last-of-type {
+    border-bottom: 1px solid rgba(88,183,176,0.28);
+  }
+  .oquee-stat:hover {
+    background: rgba(88,183,176,0.04);
+    padding-left: 12px;
+  }
+  .oquee-stat-number {
+    font-family: var(--title);
+    font-size: clamp(52px, 6vw, 82px);
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .oquee-stat-unit {
+    font-size: 0.38em;
+    color: var(--primary);
+    margin-left: 2px;
+    font-weight: 500;
+    font-style: italic;
+    vertical-align: 0.35em;
+  }
+  .oquee-stat-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    line-height: 1.7;
+    text-align: right;
+    max-width: 190px;
+  }
+  .oquee-support {
+    margin-top: 32px;
+    padding: 0;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-style: italic;
+    max-width: 480px;
+    border-left: 2px solid var(--primary);
+    padding-left: 20px;
+  }
+
+  .oquee-card {
+    background: var(--white);
+    padding: 56px 52px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  .oquee-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+  }
+  .oquee-card h3 {
+    font-family: var(--title);
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--text-dark);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .oquee-card h3 em { color: var(--primary); font-style: italic; }
+  .oquee-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .oquee-card .btn { margin-top: 16px; }
+
+  @media (max-width: 900px) {
+    .oquee { grid-template-columns: 1fr; gap: 48px; }
+    .oquee-card { padding: 40px 28px; }
+    .oquee-stat { padding: 18px 4px; }
+    .oquee-stat-number { font-size: clamp(44px, 11vw, 64px); }
+    .oquee-stat-label { max-width: 140px; font-size: 10px; }
+  }
+  @media (max-width: 480px) {
+    .oquee-stat-label { max-width: 120px; letter-spacing: 0.1em; }
+  }
+
+  /* ---------- SECTION: O QUE ENTREGA ---------- */
+  .entrega {
+    position: relative;
+    overflow: hidden;
+    background: var(--dark-teal);
+    color: rgba(255,255,255,0.82);
+  }
+  .entrega::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(88,183,176,0.10), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(88,183,176,0.08), transparent 45%);
+    pointer-events: none;
+  }
+  .entrega-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--title);
+    font-size: clamp(100px, 16vw, 220px);
+    font-weight: 500;
+    color: var(--white);
+    opacity: 0.035;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .entrega-inner { position: relative; z-index: 1; }
+  .entrega-header {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .entrega-header h2 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1;
+    color: var(--white);
+  }
+  .entrega-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .entrega-card {
+    background: rgba(255,255,255,0.04);
+    padding: 36px 32px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    transition: all 0.3s;
+    backdrop-filter: blur(4px);
+  }
+  .entrega-card:hover {
+    border-color: var(--primary);
+    background: rgba(255,255,255,0.06);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.25);
+  }
+  .entrega-card .icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(88,183,176,0.15);
+    border: 1px solid rgba(88,183,176,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .entrega-card .icon svg { width: 26px; height: 26px; }
+  .entrega-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--white);
+  }
+  .entrega-card p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.68);
+    line-height: 1.65;
+  }
+
+  @media (max-width: 900px) {
+    .entrega-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+
+  /* ---------- SECTION: MÓDULO PRESENCIAL ---------- */
+  .presencial {
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .presencial::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(88,183,176,0.12), transparent 70%);
+    pointer-events: none;
+  }
+  .presencial-inner { position: relative; z-index: 1; }
+
+  .presencial-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 64px;
+  }
+  .presencial-header h2 {
+    font-size: clamp(38px, 4.6vw, 60px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .presencial-header h2 em {
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .presencial-header .lead {
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .presencial-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .presencial-pills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    font-size: 13px;
+    color: var(--text-body);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .presencial-pills span::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+
+  .presencial-bento {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 220px);
+    gap: 14px;
+    margin-bottom: 80px;
+  }
+  .bento-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1a4140;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+  }
+  .bento-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .bento-item:hover img {
+    transform: scale(1.06);
+  }
+  .bento-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(13,43,42,0.4) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .bento-item:hover::after { opacity: 1; }
+
+  .bento-item:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+  }
+  .bento-item:nth-child(8) { grid-column: 1 / 3; }
+  .bento-item:nth-child(9) { grid-column: 3 / 5; }
+  .bento-item:nth-child(10) { grid-column: 5 / 7; }
+
+  .presencial-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-bottom: 60px;
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .highlight {
+    position: relative;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .highlight::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary);
+  }
+  .highlight-num {
+    font-family: var(--title);
+    font-size: 13px;
+    color: var(--primary);
+    letter-spacing: 0.22em;
+    margin-bottom: 14px;
+    font-weight: 600;
+    display: block;
+  }
+  .highlight h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .highlight p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .presencial-cta {
+    text-align: center;
+  }
+
+  @media (max-width: 1100px) {
+    .presencial-bento {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 180px);
+    }
+    .bento-item:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+    .bento-item:nth-child(8) { grid-column: 1 / 2; }
+    .bento-item:nth-child(9) { grid-column: 2 / 4; }
+    .bento-item:nth-child(10) { grid-column: 4 / 5; }
+  }
+  @media (max-width: 720px) {
+    .presencial-bento {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-auto-rows: 170px;
+    }
+    .bento-item:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: auto;
+      height: 260px;
+    }
+    .bento-item:nth-child(8),
+    .bento-item:nth-child(9),
+    .bento-item:nth-child(10) {
+      grid-column: auto;
+    }
+    .presencial-highlights { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- SECTION: DEPOIMENTOS ---------- */
+  .depo-header {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 60px;
+  }
+  .depo-header h2 {
+    font-size: clamp(42px, 5.4vw, 72px);
+    line-height: 1;
+  }
+  .depo-header h2 em {
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .depo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .depo-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .depo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .depo-thumb {
+    position: relative;
+    aspect-ratio: 9/12;
+    background: linear-gradient(135deg, #2d4f4e, #1f3a3a);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .depo-thumb .depo-cover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 0.6s ease, filter 0.4s ease;
+  }
+  .depo-thumb:hover .depo-cover {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+  }
+  .depo-thumb::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .depo-thumb::after {
+    content: 'Depoimento em vídeo';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  .depo-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    background: var(--primary);
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .depo-thumb:hover .depo-play {
+    transform: translate(-50%, -50%) scale(1.12);
+    background: var(--primary);
+  }
+  .depo-play svg { width: 22px; height: 22px; margin-left: 3px; }
+  .depo-thumb iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    z-index: 3;
+  }
+  .depo-thumb.is-playing { cursor: default; }
+  .depo-thumb.is-playing::before,
+  .depo-thumb.is-playing::after,
+  .depo-thumb.is-playing .depo-cover,
+  .depo-thumb.is-playing .depo-play { display: none; }
+  .depo-body { padding: 18px 22px 22px; }
+  .depo-body h4 {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .depo-body .role {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .depo-cta {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  @media (max-width: 1000px) { .depo-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 900px) {
+    .depo-header { grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 600px) { .depo-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- SECTION: TRÍADE ---------- */
+  .triade-header { text-align: center; margin-bottom: 72px; }
+  .triade-header h2 {
+    font-size: clamp(40px, 5.2vw, 64px);
+    line-height: 1.05;
+  }
+  .triade-header h2 em {
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .triade-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .triade-item {
+    padding: 56px 36px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .triade-item:last-child { border-right: none; }
+  .triade-num {
+    display: inline-block;
+    font-family: var(--title);
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .triade-item h3 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .triade-item p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .triade-cta { text-align: center; margin-top: 56px; }
+
+  @media (max-width: 900px) {
+    .triade-grid { grid-template-columns: 1fr; }
+    .triade-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .triade-item:last-child { border-bottom: none; }
+  }
+
+  /* ---------- SECTION: OFERTA ---------- */
+  .oferta {
+    position: relative;
+    padding: 120px 0;
+    background:
+      linear-gradient(rgba(255,255,255,0.82), rgba(248,248,246,0.9)),
+      linear-gradient(135deg, #e8dfd0 0%, #d4c5b0 100%);
+  }
+  .oferta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(88,183,176,0.08), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(88,183,176,0.08), transparent 40%);
+    pointer-events: none;
+  }
+  .oferta-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 64px 56px 56px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    text-align: center;
+  }
+  .oferta-seal {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84px;
+    height: 84px;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(88,183,176,0.35);
+  }
+  .oferta-seal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .oferta-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .oferta-card h2 {
+    font-size: 40px;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .oferta-list {
+    list-style: none;
+    text-align: left;
+    margin: 0 auto 36px;
+    max-width: 460px;
+  }
+  .oferta-list li {
+    padding: 12px 0 12px 32px;
+    position: relative;
+    font-size: 14px;
+    color: var(--text-body);
+    border-bottom: 1px solid var(--cream);
+  }
+  .oferta-list li:last-child { border-bottom: none; }
+  .oferta-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    background: var(--primary);
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .oferta-list strong { color: var(--text-dark); font-weight: 600; }
+
+  .oferta-price {
+    margin: 36px 0 28px;
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .oferta-from {
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .oferta-value {
+    font-family: var(--title);
+    font-size: 56px;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .oferta-value small { font-size: 28px; }
+  .oferta-total {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  .oferta-card .btn { width: 100%; margin-top: 8px; }
+  .oferta-secure {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  @media (max-width: 900px) {
+    .oferta { padding: 80px 0; }
+    .oferta-card { padding: 56px 28px 40px; }
+    .oferta-card h2 { font-size: 30px; }
+    .oferta-value { font-size: 44px; }
+  }
+
+  /* ---------- SECTION: SELO EXCLUSIVIDADE ---------- */
+  .selo {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .selo-circle {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .selo-circle::before,
+  .selo-circle::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+  }
+  .selo-circle::before { inset: 0; }
+  .selo-circle::after { inset: 14px; border-width: 2px; }
+  .selo-num {
+    font-family: var(--title);
+    font-size: 140px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1;
+  }
+  .selo-text {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-top: 4px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .selo-content h2 {
+    font-size: clamp(32px, 3.8vw, 48px);
+    margin-bottom: 28px;
+    line-height: 1.15;
+  }
+  .selo-content h2 em { font-style: italic; color: var(--primary); font-weight: 500; }
+  .selo-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    max-width: 560px;
+  }
+  .selo-content p em { color: var(--primary); font-style: normal; font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .selo { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+    .selo-content p { margin-left: auto; margin-right: auto; }
+  }
+
+  /* ---------- SECTION: PROFESSORA ---------- */
+  .professora {
+    background: var(--primary);
+    color: var(--white);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .professora::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 10% 10%, rgba(255,255,255,0.08), transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(0,0,0,0.1), transparent 50%);
+  }
+  .professora-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+  }
+  .professora .eyebrow { color: rgba(255,255,255,0.85); }
+  .professora h2 {
+    color: var(--white);
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.95;
+    margin-bottom: 36px;
+    font-weight: 500;
+  }
+  .professora p {
+    color: rgba(255,255,255,0.88);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 560px;
+  }
+  .professora strong { color: var(--white); font-weight: 600; }
+  .professora .btn { margin-top: 16px; }
+
+  .professora-visual {
+    position: relative;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+  }
+  .professora-visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    z-index: 1;
+    transition: transform 0.8s ease;
+  }
+  .professora-visual:hover img { transform: scale(1.03); }
+  .professora-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(13,43,42,0.35) 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .professora-name {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: center;
+    font-family: var(--title);
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+    white-space: nowrap;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  @media (max-width: 900px) {
+    .professora { padding: 80px 0; }
+    .professora-grid { grid-template-columns: 1fr; gap: 48px; }
+    .professora-name { display: none; }
+  }
+
+  /* ---------- SECTION: FAQ ---------- */
+  .faq-header { text-align: center; margin-bottom: 64px; }
+  .faq-header h2 {
+    font-size: clamp(36px, 4.4vw, 56px);
+  }
+  .faq-header h2 em { font-style: italic; color: var(--primary); font-weight: 500; }
+
+  .faq-list {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-top: 1px solid var(--border);
+  }
+  .faq-item:last-child { border-bottom: 1px solid var(--border); }
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px 8px;
+    cursor: pointer;
+    font-family: var(--title);
+    font-size: 22px;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--primary); }
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  .faq-item.open .faq-icon {
+    background: var(--primary);
+    color: var(--white);
+    transform: rotate(45deg);
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 8px;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 400px;
+    padding: 0 8px 28px;
+  }
+  .faq-answer p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 720px;
+  }
+
+  /* ---------- SECTION: FALE CONOSCO ---------- */
+  .fale {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--offwhite) 100%);
+    padding: 100px 0;
+    text-align: center;
+  }
+  .fale-seal {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 28px;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(88,183,176,0.3);
+  }
+  .fale-seal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .fale h2 {
+    font-size: clamp(36px, 4.4vw, 56px);
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+  .fale h2 em { font-style: italic; color: var(--primary); font-weight: 500; }
+  .fale p {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 580px;
+    margin: 0 auto 40px;
+    line-height: 1.75;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    background: #1e413e;
+    color: #ecedf2;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding: 48px 0 24px;
+    font-family: var(--sans);
+    font-size: 18px;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .footer-copyright {
+    color: #ecedf2;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .footer-links a {
+    color: #ecedf2;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+  }
+  .footer-links a:hover { opacity: 0.7; }
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(236, 237, 242, 0.18);
+  }
+  .footer-credits-line {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer-credits-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .footer-credits-logo {
+    display: inline-block;
+    width: 122px;
+    height: 39px;
+    transition: opacity 0.25s ease;
+  }
+  .footer-credits-logo:hover { opacity: 0.85; }
+  .footer-credits-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .footer-cnpj {
+    color: #d0d0d0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  @media (max-width: 720px) {
+    .footer {
+      padding: 40px 0 24px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .footer-copyright,
+    .footer-links a,
+    .footer-credits-label,
+    .footer-cnpj { font-size: 14px; }
+    .footer-links { gap: 24px; flex-wrap: wrap; justify-content: center; }
+    .footer-credits-line { gap: 16px; }
+    .footer-credits-logo { width: 100px; height: 32px; }
+  }
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+
+<!-- ============ HERO VSL ============ -->
+<section class="hero" id="hero">
+  <!-- Decorative circles -->
+  <div class="hero-deco hero-deco--1"></div>
+  <div class="hero-deco hero-deco--2"></div>
+  <div class="hero-deco hero-deco--3"></div>
+  <div class="hero-deco hero-deco--4"></div>
+
+  <div class="container">
+    <span class="hero-eyebrow">Jornada Memória & Informação</span>
+
+    <h1>Entender esses <strong>padrões invisíveis</strong><br />me ajudou a encontrar uma <em>vida com propósito e clareza,</em> após anos repetindo os mesmos ciclos.</h1>
+
+    <p class="hero-sub">Escute você também para decodificar o mapa oculto que organiza sua história</p>
+
+    <div class="vsl-wrap" data-video-id="03NTjEWAdDk" role="button" tabindex="0" aria-label="Reproduzir vídeo de apresentação">
+      <img
+        class="vsl-cover"
+        src="midia/Sobreposiçãodeimagem.webp"
+        alt="Capa do vídeo de apresentação — Josie Kromer"
+        loading="lazy"
+        decoding="async"
+        width="1280"
+        height="720"
+      />
+      <button class="vsl-play" type="button" aria-label="Reproduzir vídeo">
+        <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+
+    <div class="hero-cta-area">
+      <a href="#oferta" class="btn-hero">Quero conhecer o método</a>
+    </div>
+
+    <p class="hero-micro">Em poucos meses você terá se tornado alguém com <strong>consciência profunda</strong><br />e preparado para viver uma vida com <strong>significado e liberdade</strong> que tanto merece!</p>
+  </div>
+</section>
+
+<!-- ============ PADRÕES INVISÍVEIS ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="padroes reveal">
+      <div class="padroes-img">
+        <span class="vertical-label">— Ciclos Memorizados</span>
+        <img src="midia/padroes-invisiveis.webp" alt="Mulher em reflexão profunda, sentida pelo padrão que se repete" loading="lazy" />
+      </div>
+      <div class="padroes-content">
+        <h2 class="callout">É preciso aprender a <em>ler o que a vida está repetindo</em> em você.</h2>
+        <p>Nenhum conflito é aleatório. Nenhum padrão é coincidência. Cada relação difícil, cada ciclo que se repete e cada sintoma do corpo carregam uma informação memorizada — esperando ser decodificada.</p>
+        <p>A maioria tenta mudar o comportamento, mas nunca acessa a raiz. Troca de hábito, de cidade, de parceiro, de profissão… e no fim, a vida volta a se organizar da mesma forma.</p>
+        <p>Existe uma lógica por trás disso. E ela pode ser aprendida.</p>
+        <a href="#metodo" class="link-arrow">Entenda como funciona <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO M.I. ============ -->
+<section class="section" id="metodo">
+  <div class="container">
+    <div class="metodo-header reveal">
+      <span class="eyebrow">— Conheça a</span>
+      <h2>Metodologia Memória & Informação</h2>
+      <p>O método que integra 4 linguagens ancestrais para revelar a coerência oculta de cada vida.</p>
+    </div>
+
+    <div class="mandala reveal">
+      <div class="mandala-center">
+        <img src="midia/selo-metodo.png" alt="Selo Memória e Informação — mandala com hélice de DNA, roda zodiacal e geometria sagrada" />
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3v18M3 12h18"/>
+          </svg>
+        </div>
+        <h3>Biologia</h3>
+        <p>As 5 Leis Biológicas sob o olhar terapêutico — o corpo como espelho da história da alma.</p>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v20M6 6l12 12M6 18L18 6"/>
+          </svg>
+        </div>
+        <h3>Genealogia</h3>
+        <p>A Grade de Lealdade Familiar e as Pegadas Genômicas herdadas do clã ao longo das gerações.</p>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/>
+          </svg>
+        </div>
+        <h3>Astrologia</h3>
+        <p>Energias astrológicas e arquétipos que estruturam o propósito de cada ser e revelam o projeto da alma.</p>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 22h20L12 2z"/>
+            <path d="M12 8v6M12 17h.01"/>
+          </svg>
+        </div>
+        <h3>Simbologia</h3>
+        <p>Ciclos de vida memorizados e o simbolismo dos números na biografia — a linguagem silenciosa da alma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONHEÇA O MÉTODO ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="conheca reveal">
+      <div class="conheca-img">
+        <img src="midia/modulopresencial5.webp" alt="Josie Kromer conduzindo o módulo presencial" loading="lazy" />
+      </div>
+      <div class="conheca-content">
+        <span class="eyebrow">— Sobre o</span>
+        <h2>Método <em>M.I.</em></h2>
+        <p>Memória e Informação é mais do que um curso — é uma <strong>lente de leitura da existência</strong>. Um caminho que ensina a interpretar os sinais do corpo, as repetições do clã e os ciclos da biografia como uma única mensagem coerente.</p>
+        <div class="quote">"Cada módulo é um ciclo. Cada ciclo, uma oportunidade de cura."</div>
+        <a href="#curso" class="link-arrow">Conheça o método na prática <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM É ============ -->
+<section class="section" id="curso">
+  <div class="container">
+    <div class="paraquem reveal">
+      <div class="paraquem-content">
+        <span class="eyebrow">— Para você</span>
+        <h2>Para quem é<br /> o curso?</h2>
+        <p>Este curso foi desenhado para mulheres entre 35 e 50 anos que carregam uma inquietação profunda — a de compreender o ser humano além do cartesiano, além do sintoma, além da superfície.</p>
+        <ul class="paraquem-list">
+          <li><strong>Terapeutas</strong> que buscam integrar corpo, mente e emoção em um método único e profundo.</li>
+          <li><strong>Profissionais em transição de carreira</strong> que querem atuar com terapias integrativas, sem reduzir o ser humano a um protocolo.</li>
+          <li><strong>Buscadoras da consciência</strong> que já se cansaram de respostas fragmentadas e desejam uma visão sistêmica do ser.</li>
+          <li><strong>Mulheres que sentem</strong> que a vida está repetindo padrões — e querem entender a origem, não apenas trocar o comportamento.</li>
+        </ul>
+      </div>
+      <div class="paraquem-grid">
+        <div class="img" data-label="Vivência">
+          <img src="midia/paraquem-vivencia.webp" alt="Mulher em vivência meditativa com vela acesa" loading="lazy" />
+        </div>
+        <div class="img" data-label="Atendimento clínico">
+          <img src="midia/paraquem-atendimento.webp" alt="Terapeuta em sessão de atendimento integrativo" loading="lazy" />
+        </div>
+        <div class="img" data-label="Prática terapêutica">
+          <img src="midia/paraquem-pratica.webp" alt="Mãos da terapeuta em prática integrativa com objetos simbólicos" loading="lazy" />
+        </div>
+        <div class="img" data-label="Leitura simbólica">
+          <img src="midia/paraquem-leitura.webp" alt="Leitura simbólica de árvore genealógica e mapa astrológico" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE É O CURSO ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="oquee-header reveal">
+      <h2>O que é o curso?</h2>
+    </div>
+    <div class="oquee reveal">
+      <div>
+        <div class="oquee-stats">
+          <span class="oquee-stats-eyebrow">— A formação em números</span>
+
+          <div class="oquee-stat">
+            <div class="oquee-stat-number">130<span class="oquee-stat-unit">h</span></div>
+            <div class="oquee-stat-label">de formação<br />integral</div>
+          </div>
+
+          <div class="oquee-stat">
+            <div class="oquee-stat-number">04</div>
+            <div class="oquee-stat-label">módulos — 3 online<br />+ 1 presencial em SP</div>
+          </div>
+
+          <div class="oquee-stat">
+            <div class="oquee-stat-number">30<span class="oquee-stat-unit">+</span></div>
+            <div class="oquee-stat-label">anos de experiência<br />internacional</div>
+          </div>
+
+          <div class="oquee-stat">
+            <div class="oquee-stat-number">06</div>
+            <div class="oquee-stat-label">países onde o método<br />já foi conduzido</div>
+          </div>
+        </div>
+
+        <p class="oquee-support">Para quem sente que já leu sobre tudo, mas ainda não encontrou algo que unifique. Para quem busca profundidade real — não mais um método que ensina o quê, mas o que revela o porquê.</p>
+      </div>
+      <div class="oquee-card">
+        <h3>Memória e Informação — <em>Uma jornada para o conhecimento.</em></h3>
+        <p>É um percurso formativo de <strong>130 horas</strong> que integra biologia, genealogia, astrologia e simbologia em uma metodologia única. Ao longo de 4 módulos — 3 online e 1 presencial em São Paulo — você aprende a ler os ciclos de vida memorizados, as lealdades familiares e as impressões energéticas que organizam cada biografia.</p>
+        <p>Não é um curso para decorar técnicas. É uma formação para <strong>enxergar a vida com outros olhos</strong>.</p>
+        <a href="#oferta" class="btn btn-primary">Quero me inscrever agora <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE ENTREGA ============ -->
+<section class="section entrega">
+  <div class="entrega-watermark">CONHECIMENTO</div>
+  <div class="container entrega-inner">
+    <div class="entrega-header reveal">
+      <h2>O que o curso<br />entrega?</h2>
+    </div>
+    <div class="entrega-grid reveal">
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M3 12h18"/></svg></div>
+        <h3>Metodologia Integradora</h3>
+        <p>Quatro linguagens ancestrais reunidas em um único método terapêutico profundo.</p>
+      </div>
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg></div>
+        <h3>Conteúdo Inédito</h3>
+        <p>Acesso a conhecimentos raros sobre grade de lealdade e pegadas genômicas.</p>
+      </div>
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3>Módulo Presencial</h3>
+        <p>Um módulo completo ao vivo em São Paulo, com vivência direta com a professora.</p>
+      </div>
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></div>
+        <h3>Acompanhamento da Mentora</h3>
+        <p>Josie Kromer conduz cada módulo com presença ativa e leitura de casos clínicos.</p>
+      </div>
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M3 21v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1M15 21v-1a4 4 0 0 1 4-4h2"/></svg></div>
+        <h3>Comunidade Exclusiva</h3>
+        <p>Grupo de WhatsApp restrito a alunas da turma para troca e suporte contínuo.</p>
+      </div>
+      <div class="entrega-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+        <h3>Certificação & Gravações</h3>
+        <p>130h certificadas + acesso às aulas gravadas por 12 meses em plataforma própria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO PRESENCIAL ============ -->
+<section class="section presencial">
+  <div class="container presencial-inner">
+    <div class="presencial-header reveal">
+      <span class="eyebrow">— Módulo Presencial · São Paulo</span>
+      <h2>4 dias de imersão<br /><em>ao vivo com Josie Kromer</em></h2>
+      <p class="lead">O ponto alto da formação é vivido presencialmente. Quatro dias de encontro profundo, em que a turma se reúne em São Paulo para vivenciar na prática o que foi construído ao longo dos módulos online — com leitura de casos reais, exercícios simbólicos e a presença direta da professora.</p>
+      <div class="presencial-pills">
+        <span>São Paulo · Brasil</span>
+        <span>4 dias de imersão</span>
+        <span>Turma reduzida</span>
+        <span>Certificação inclusa</span>
+      </div>
+    </div>
+
+    <div class="presencial-bento reveal">
+      <div class="bento-item"><img src="midia/modulopresencial1.webp" alt="Vivência do módulo presencial — Josie Kromer conduzindo aula" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial2.webp" alt="Alunas em dinâmica de grupo durante o módulo presencial" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial3.webp" alt="Momento de integração entre as alunas" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial4.webp" alt="Leitura de caso clínico com Josie Kromer" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial5.webp" alt="Exercício prático durante o encontro presencial" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial6.webp" alt="Detalhe do material de apoio do curso" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial7.webp" alt="Alunas em vivência simbólica" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial8.webp" alt="Atendimento prático acompanhado pela professora" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial9.webp" alt="Conversa em círculo entre as alunas e a mentora" loading="lazy" /></div>
+      <div class="bento-item"><img src="midia/modulopresencial10.webp" alt="Encerramento do módulo presencial" loading="lazy" /></div>
+    </div>
+
+    <div class="presencial-highlights reveal">
+      <div class="highlight">
+        <span class="highlight-num">01 · Presença</span>
+        <h3>Contato direto com a professora</h3>
+        <p>Josie Kromer conduz pessoalmente cada dia da imersão, respondendo dúvidas, lendo casos e ajustando a percepção de cada aluna em tempo real.</p>
+      </div>
+      <div class="highlight">
+        <span class="highlight-num">02 · Prática</span>
+        <h3>Vivência integradora</h3>
+        <p>Os conteúdos estudados nos módulos online ganham corpo em exercícios simbólicos, dinâmicas em círculo e leituras biográficas ao vivo.</p>
+      </div>
+      <div class="highlight">
+        <span class="highlight-num">03 · Comunidade</span>
+        <h3>Conexão entre alunas</h3>
+        <p>O encontro presencial é também onde nasce a comunidade de apoio — vínculos reais que seguem ativos no grupo exclusivo após o curso.</p>
+      </div>
+    </div>
+
+    <div class="presencial-cta reveal">
+      <a href="#oferta" class="btn btn-primary btn-lg">Quero vivenciar o módulo presencial <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section class="section section-alt" id="depoimentos">
+  <div class="container">
+    <div class="depo-header reveal">
+      <h2>Depoimentos<br />de <em>quem já viveu</em></h2>
+      <p style="font-size: 16px; line-height: 1.75; color: var(--text-muted); max-width: 520px;">Profissionais que percorreram a jornada Memória & Informação e transformaram a forma de enxergar — a si mesmos, seus clientes e a própria vida.</p>
+    </div>
+
+    <div class="depo-grid reveal">
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="n7IwJZk042A" role="button" tabindex="0" aria-label="Assistir depoimento de Dra. Karen Ferrel">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/n7IwJZk042A/hqdefault.jpg" alt="Capa do depoimento de Dra. Karen Ferrel" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dra. Karen Ferrel</h4>
+          <div class="role">Ex-aluna · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="88zox6SQpYI" role="button" tabindex="0" aria-label="Assistir depoimento de Dr. Ivan Bonaldo">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/88zox6SQpYI/hqdefault.jpg" alt="Capa do depoimento de Dr. Ivan Bonaldo" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dr. Ivan Bonaldo</h4>
+          <div class="role">Ex-aluno · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="ZgUdBHI1CeU" role="button" tabindex="0" aria-label="Assistir depoimento de Dr. Marco Antonio Reis">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/ZgUdBHI1CeU/hqdefault.jpg" alt="Capa do depoimento de Dr. Marco Antonio Reis" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dr. Marco Antonio Reis</h4>
+          <div class="role">Ex-aluno · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="bWJRot63qFM" role="button" tabindex="0" aria-label="Assistir depoimento de Dra. Silvia Pauleto">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/bWJRot63qFM/hqdefault.jpg" alt="Capa do depoimento de Dra. Silvia Pauleto" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dra. Silvia Pauleto</h4>
+          <div class="role">Ex-aluna · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="h6EF5cJ0kiY" role="button" tabindex="0" aria-label="Assistir depoimento de Dra. Adriana Uchida">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/h6EF5cJ0kiY/hqdefault.jpg" alt="Capa do depoimento de Dra. Adriana Uchida" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dra. Adriana Uchida</h4>
+          <div class="role">Ex-aluna · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="ck7AhGlhf8I" role="button" tabindex="0" aria-label="Assistir depoimento de Dr. Cláudio Santos">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/ck7AhGlhf8I/hqdefault.jpg" alt="Capa do depoimento de Dr. Cláudio Santos" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Dr. Cláudio Santos</h4>
+          <div class="role">Ex-aluno · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="-uN-DMwRBFU" role="button" tabindex="0" aria-label="Assistir depoimento de Cassius Maynardi">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/-uN-DMwRBFU/hqdefault.jpg" alt="Capa do depoimento de Cassius Maynardi" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Cassius Maynardi</h4>
+          <div class="role">Ex-aluno · Jornada M.I.</div>
+        </div>
+      </div>
+
+      <div class="depo-card">
+        <div class="depo-thumb" data-video-id="o3sDBO1bRKs" role="button" tabindex="0" aria-label="Assistir depoimento de Mariana Avanço">
+          <img class="depo-cover" src="https://i.ytimg.com/vi/o3sDBO1bRKs/hqdefault.jpg" alt="Capa do depoimento de Mariana Avanço" loading="lazy" decoding="async" />
+          <button class="depo-play" type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+        <div class="depo-body">
+          <h4>Mariana Avanço</h4>
+          <div class="role">Ex-aluna · Jornada M.I.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depo-cta reveal">
+      <a href="#oferta" class="btn btn-primary btn-lg">Quero viver essa transformação <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRÍADE ============ -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="triade-header reveal">
+      <span class="eyebrow">— A Tríade da</span>
+      <h2>Consciência <em>Integrada</em></h2>
+    </div>
+
+    <div class="triade-grid reveal">
+      <div class="triade-item">
+        <span class="triade-num">01</span>
+        <h3>Raiz</h3>
+        <p>O olhar profundo sobre o clã, a ancestralidade e as lealdades invisíveis que moldam o ponto de partida de cada vida.</p>
+      </div>
+      <div class="triade-item">
+        <span class="triade-num">02</span>
+        <h3>Ciclo</h3>
+        <p>A leitura dos ritmos biológicos, biográficos e astrológicos que revelam em que movimento a alma está agora.</p>
+      </div>
+      <div class="triade-item">
+        <span class="triade-num">03</span>
+        <h3>Despertar</h3>
+        <p>A capacidade de reconhecer o padrão, romper a repetição e se posicionar diante da vida com consciência integral.</p>
+      </div>
+    </div>
+
+    <div class="triade-cta reveal">
+      <a href="#oferta" class="btn btn-outline btn-lg">Quero fazer parte dessa jornada <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="oferta" id="oferta">
+  <div class="container">
+    <div class="oferta-card reveal">
+      <div class="oferta-seal"><img src="midia/Logo%20-%20Synapse.webp" alt="Logo Synapxs" loading="lazy" decoding="async" /></div>
+      <span class="oferta-eyebrow">Turma 2026 · Vagas Limitadas</span>
+      <h2>O que você terá acesso:</h2>
+
+      <ul class="oferta-list">
+        <li><strong>Módulo 1</strong> — As Leis Universais e a Grade de Lealdade Familiar <em>(3 dias online)</em></li>
+        <li><strong>Módulo 2</strong> — Ciclos de Vida Memorizados e Simbolismo dos Números <em>(3 dias online)</em></li>
+        <li><strong>Módulo 3</strong> — Astrotipologia <em>(3 dias online)</em></li>
+        <li><strong>Módulo 4</strong> — Impressões Genômicas e Energias Astrológicas <em>(4 dias presenciais em SP)</em></li>
+        <li><strong>Acesso às gravações</strong> por 12 meses</li>
+        <li><strong>Grupo exclusivo no WhatsApp</strong> com suporte contínuo</li>
+        <li><strong>Certificação</strong> — 130h totais</li>
+        <li><strong>Tradução</strong> integral para português em todos os módulos</li>
+      </ul>
+
+      <div class="oferta-price">
+        <div class="oferta-from">12x de</div>
+        <div class="oferta-value"><small>R$</small> 730<small>,00</small></div>
+        <div class="oferta-total">ou R$ 8.500,00 à vista (Pix, Boleto ou Cartão)</div>
+      </div>
+
+      <a href="#" class="btn btn-primary btn-lg">Garantir minha vaga <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+      <div class="oferta-secure">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Inscrição segura · Vagas limitadas para a turma presencial
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELO EXCLUSIVIDADE ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="selo reveal">
+      <div class="selo-circle">
+        <div class="selo-num">4</div>
+        <div class="selo-text">Dias de Imersão<br />Presencial em SP</div>
+      </div>
+      <div class="selo-content">
+        <span class="eyebrow">— Uma experiência única</span>
+        <h2>Por que esse curso<br /> é <em>diferente</em>:</h2>
+        <p>Esta não é uma formação de massa. A turma é limitada para garantir que cada aluna tenha contato direto com Josie Kromer durante o módulo presencial em São Paulo.</p>
+        <p>Você não está comprando um conteúdo gravado — está entrando em uma <strong>comunidade de aprendizado conduzida pessoalmente</strong> pela professora, com acompanhamento no grupo exclusivo e leitura de casos reais ao longo dos 4 módulos.</p>
+        <p><em>Vagas são abertas por turma. Quando encerram, encerram.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFESSORA ============ -->
+<section class="professora" id="professora">
+  <div class="container">
+    <div class="professora-grid reveal">
+      <div>
+        <span class="eyebrow">— A sua mentora nessa jornada</span>
+        <h2>Josie<br />Kromer</h2>
+        <p>Josie Kromer é psicoterapeuta, palestrante e professora de renome internacional. Com <strong>mais de 30 anos</strong> de atuação em países como <strong>França, Bélgica, Itália, Canadá, Suíça e Brasil</strong>, ela se tornou referência por unir diferentes disciplinas em uma visão abrangente e integradora do ser humano.</p>
+        <p>Seu trabalho inspira terapeutas e buscadores a compreenderem a <strong>coerência entre corpo, mente e alma</strong> — transformando conhecimento em consciência.</p>
+        <p>Esta é uma oportunidade rara de aprender diretamente com quem construiu, ao longo de décadas, uma metodologia própria que hoje é procurada em três continentes.</p>
+        <a href="#oferta" class="btn btn-white">Quero aprender com a Josie <svg class="ph-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="40" y1="128" x2="216" y2="128"/><polyline points="144 56 216 128 144 200"/></svg></a>
+      </div>
+      <div style="position: relative;">
+        <div class="professora-visual">
+          <img src="midia/Josie%20Kromer.webp" alt="Retrato de Josie Kromer — psicoterapeuta e professora internacional" loading="lazy" decoding="async" />
+        </div>
+        <div class="professora-name">JOSIE KROMER</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-cream" id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="eyebrow">— Dúvidas frequentes</span>
+      <h2>FAQ — Perguntas <em>& Respostas</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-question">Qual a duração do curso? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>O curso possui no total 13 dias distribuídos em 4 módulos — sendo 3 módulos com duração de 3 dias cada (online) e 1 módulo presencial de 4 dias em São Paulo. Carga horária total: 130 horas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Quem pode fazer o curso? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>O curso Memória e Informação é aberto a todas as pessoas que possuam interesse genuíno em aprender os conteúdos de Josie Kromer. É especialmente indicado para terapeutas e profissionais em transição para a área integrativa.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Não sei falar francês, conseguirei acompanhar o curso? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>Sim. O curso possui em todos os módulos a tradução integral para o idioma português (Brasil).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Poderei assistir em outro momento as aulas gravadas? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>Sim. O aluno terá acesso às aulas dos módulos 1, 2 e 3 gravadas, disponíveis em plataforma específica pelo período de 12 meses.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como é feito o pagamento? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>Você pode pagar em 12x de R$ 730,00 no cartão, ou R$ 8.500,00 à vista via Pix, boleto ou cartão.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">E se eu nunca tiver estudado esses temas antes? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">
+          <p>Cada módulo é construído em camadas. A metodologia começa do conceito fundamental e aprofunda progressivamente — você não precisa de formação prévia, apenas abertura para a experiência.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FALE CONOSCO ============ -->
+<section class="fale">
+  <div class="container">
+    <div class="reveal">
+      <div class="fale-seal"><img src="midia/Logo%20-%20Synapse.webp" alt="Logo Synapxs" loading="lazy" decoding="async" /></div>
+      <span class="eyebrow">— A sua jornada começa com uma conversa</span>
+      <h2>Dúvidas? Fale com<br /><em>a nossa equipe</em></h2>
+      <p>Nossa equipe está pronta para esclarecer qualquer dúvida sobre a metodologia, as datas da próxima turma presencial em São Paulo e as condições de pagamento. Atendimento direto, humano e sem pressão.</p>
+      <a href="#" class="btn btn-whatsapp btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+        Falar no WhatsApp agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <p class="footer-copyright">&reg;2026 Synapxs — Todos os direitos reservados</p>
+      <nav class="footer-links" aria-label="Links institucionais">
+        <a href="#">Política de privacidade</a>
+        <a href="#">Suporte</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-credits-line">
+        <span class="footer-credits-label">Desenvolvido por</span>
+        <a href="#" class="footer-credits-logo" aria-label="Reproduzindo Talentos" target="_blank" rel="noopener">
+          <img src="midia/logo-rt-marketing.webp" alt="Reproduzindo Talentos" loading="lazy" decoding="async" />
+        </a>
+      </div>
+      <p class="footer-cnpj">CNPJ n° 47.387.316/0001-41 — CEP: 72426-125</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Open first FAQ by default
+  document.querySelector('.faq-item')?.classList.add('open');
+
+  // Show nav CTA after hero
+  const navCta = document.querySelector('.nav-cta');
+  if (navCta) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) navCta.style.display = 'inline-flex';
+      else navCta.style.display = 'none';
+    });
+  }
+
+  // YouTube facade — lazy load iframe only on click
+  (function () {
+    // Warm YouTube connection once (hover or touch on any facade)
+    let warmed = false;
+    const warm = () => {
+      if (warmed) return;
+      warmed = true;
+      const hints = [
+        { rel: 'preconnect', href: 'https://www.youtube-nocookie.com' },
+        { rel: 'preconnect', href: 'https://www.google.com' },
+        { rel: 'preconnect', href: 'https://i.ytimg.com' },
+      ];
+      hints.forEach(h => {
+        const link = document.createElement('link');
+        Object.assign(link, h);
+        document.head.appendChild(link);
+      });
+    };
+
+    const loadVideo = (container, title) => {
+      if (container.classList.contains('is-playing')) return;
+      const id = container.dataset.videoId;
+      if (!id) return;
+
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+      iframe.title = title || 'Vídeo';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+
+      container.appendChild(iframe);
+      container.classList.add('is-playing');
+    };
+
+    const bind = (container, title) => {
+      if (!container) return;
+      container.addEventListener('click', () => loadVideo(container, title));
+      container.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          loadVideo(container, title);
+        }
+      });
+      container.addEventListener('mouseenter', warm, { once: true });
+      container.addEventListener('touchstart', warm, { once: true, passive: true });
+    };
+
+    // Hero VSL
+    bind(document.querySelector('.vsl-wrap'), 'Vídeo de apresentação — Memória & Informação');
+
+    // Testimonial cards
+    document.querySelectorAll('.depo-thumb[data-video-id]').forEach((el) => {
+      bind(el, 'Depoimento — Memória & Informação');
+    });
+  })();
+</script>
+
+</body>
+</html>
